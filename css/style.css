@@ -1,0 +1,12 @@
+body {
+    background-color: yellowgreen;
+}
+.menu {
+    background-color: red;
+    font-size: large;
+    text-align: center;
+    
+     height:100px;   /*magasság*/
+     margin:5px;    /*margó*/
+     padding:10px;   /*belső kitöltés*/ 
+}
