@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+
 </head>
+
 <body>
     <div class="menu">
         <a href="/index.html">Címlap</a>
@@ -13,7 +17,32 @@
         <a href="/menu.html">Menünk</a>
         <a href="/opening.html">Nyitvatartás</a>
     </div>
-    <h1>About</h1>
-    <a href="index.html">KATTT</a>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h3>Hamburger rendelése</h3>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Feltét</label>
+                        <input type="text" name="top-input" class=form-control>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mennyiség</label>
+                        <input type="number" name="amount-input" class="form-control">
+                    </div>
+                    <div class="form-group"></div>
+                    Fizetendő: <span class="show-amount">0</span> Ft
+                    <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
+                </form>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+
+
 </body>
+
 </html>
